@@ -1,2 +1,13 @@
-<h1>Welcome to my home page</h1>
-<p>This is my homepage shown to you using the PHP web framework.</p>
+<h3>Demo pages</h3>
+<p>The following demo pages are available:</p>
+<ul>
+<li><a href="{LINK_ROOT}parameters">Parameters in URI</a></li>
+</ul>
+
+<p>More to come:</p>
+<ul>
+<li>External style sheets</li>
+<li>Java script files</li>
+<li>External JS</li>
+<li>Database access</li>
+</ul>
