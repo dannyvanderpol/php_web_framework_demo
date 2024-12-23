@@ -12,7 +12,9 @@ class ControllerApplication extends F\ControllerBase
         // Create our own view
         $view = new ViewApplication();
         $view->pageTitle = PAGE_TITLE;
-        $view->pageFile = $viewName;
+        // All my views are PHP files
+        $view->pageFile = $viewName . ".php";
+        $view->styleSheets[] = "application/styles/application.css";
         return $view;
     }
 }
