@@ -1,7 +1,9 @@
 <?php
 
+define("PAGE_TITLE", "PHP framework demo");
+
 define("ROUTES", [
-    ["DEFAULT", "Controller", "showHome"]
+    ["DEFAULT", "ControllerPages", "showHome"]
 ]);
 
 define("SEARCH_PATHS", [
