@@ -1,5 +1,5 @@
 <?php
 
-require_once("application/routes.php");
+require_once("application/initialize.php");
 
 include("framework/index.php");
