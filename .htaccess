@@ -1,3 +1,12 @@
+# Ignore git related files
+RedirectMatch 403 /\.git
+RedirectMatch 403 /\.gitignore
+RedirectMatch 403 /\.gitmodules
+
+RedirectMatch 403 /readme\.md
+
+# Redirect all URIs to the index.php
+# except URIs that point to existing files or folders
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f

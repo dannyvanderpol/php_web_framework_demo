@@ -17,8 +17,7 @@ HOST_URI = "http://localhost:8080/php_web_framework_demo"
 # Define here your exeptions using regular expressions
 EXCEPTIONS = {
     # "reg_expres" : expected_status_code
-    r"index.php": 200,
-    r"framework/index.php": 404
+    r"^index.php": 200
 }
 
 # Script must be in application/scripts, to make this work
