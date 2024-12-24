@@ -27,7 +27,7 @@ class ControllerPages extends ControllerApplication
         if ($filename != null)
         {
             echo "<pre>\n";
-            echo htmlspecialchars(file_get_contents(FRAMEWORK_FOLDER . ".logs/{$filename}.log"));
+            echo htmlspecialchars(file_get_contents(FRAMEWORK_LOGS_FOLDER . "{$filename}.log"));
             echo "</pre>\n";
         }
     }
