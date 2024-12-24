@@ -1,5 +1,13 @@
-html        {padding: 0; margin: 0; font-family: sans-serif; font-size: 16px}
-body        {padding: 0; margin: 0;}
-header      {padding: 2px 16px; margin: 0; background-color: #06c; color: #fff}
-footer      {padding: 8px 16px; margin: 0; text-align: center; font-size: 0.8em; border-top: 1px solid #ccc}
-.content    {padding: 2px 16px; min-height: 600px;}
+html            {padding: 0; margin: 0; font-family: sans-serif; font-size: 16px}
+body            {padding: 0; margin: 0;}
+header          {padding: 2px 16px; margin: 0; background-color: #06c; color: #fff}
+footer          {padding: 8px 16px; margin: 0; text-align: center; font-size: 0.8em; border-top: 1px solid #ccc}
+table           {border-collapse: collapse}
+td              {padding: 4px 8px}
+input           {padding: 4px 8px; font: inherit; border: 1px solid #ccc}
+textarea        {padding: 4px 8px; font: inherit; border: 1px solid #ccc; height: 100px}
+button          {padding: 8px 16px; font: inherit; background-color: #06c; color: #fff; border: 0; cursor: pointer}
+button:hover    {background-color: #ccc; color: #000}
+.content        {padding: 2px 16px; min-height: 600px;}
+.width-default  {width: 300px}
+.width-small    {width: 100px}

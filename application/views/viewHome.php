@@ -2,6 +2,7 @@
 <p>The following demo pages are available:</p>
 <ul>
 <li><a href="{LINK_ROOT}parameters">Parameters in URI</a></li>
+<li><a href="{LINK_ROOT}email-test">Email test</a></li>
 </ul>
 
 <p>More to come:</p>

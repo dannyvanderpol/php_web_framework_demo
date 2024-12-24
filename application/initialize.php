@@ -13,7 +13,14 @@ define("ROUTES", [
     // Only parameter 2
     ["parameters/param-2/{param_2}",                   "ControllerPages", "showParameters"],
     // Both parameters
-    ["parameters/param-1/{param_1}/param-2/{param_2}", "ControllerPages", "showParameters"]
+    ["parameters/param-1/{param_1}/param-2/{param_2}", "ControllerPages", "showParameters"],
+
+    // Email test
+    ["email-test",                                     "ControllerPages", "showEmailTest" ],
+    ["send-email",                                     "ControllerPost",  "sendEmail"     ],
+
+    // Show log files
+    ["show-log/{filename}",                            "ControllerPages", "showLogFile"   ]
 ]);
 
 define("SEARCH_PATHS", [
