@@ -3,6 +3,6 @@
 
 <pre>
 <?php
-print_r($this->pageData);
+var_export($this->pageData);
 ?>
 </pre>
