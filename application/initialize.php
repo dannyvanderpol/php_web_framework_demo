@@ -19,6 +19,10 @@ define("ROUTES", [
     ["email-test",                                     "ControllerPages", "showEmailTest" ],
     ["send-email",                                     "ControllerPost",  "sendEmail"     ],
 
+    // Database
+    ["database",                                       "ControllerPages", "showDatabase"  ],
+    ["database/process-record",                        "ControllerPost",  "processRecord" ],
+
     // Show log files
     ["show-log/{filename}",                            "ControllerPages", "showLogFile"   ]
 ]);
@@ -28,3 +32,9 @@ define("SEARCH_PATHS", [
     "application/models",
     "application/views"
 ]);
+
+// Test database settings, these are only for testing and not used in any real live database
+define("DB_HOST",     "localhost");
+define("DB_NAME",     "framework_demo");
+define("DB_USER",     "framework_user");
+define("DB_PASSWORD", "V3ryS3cr3tP@ssw0rd!");

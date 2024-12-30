@@ -21,6 +21,18 @@ class ControllerPages extends ControllerApplication
         return $view->generateOutput();
     }
 
+    protected function showDatabase()
+    {
+        $table = new ModelDatabaseTableTest();
+        $view = $this->createView("viewDatabase");
+        $view->pageData = [
+            "fields"  => $table->fields,
+            "records" => $table->getRecords(),
+            "error"   => $table->getLastError()
+        ];
+        return $view->generateOutput();
+    }
+
     protected function showLogFile($parameters)
     {
         $filename = F\arrayGet($parameters, "filename");

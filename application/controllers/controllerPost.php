@@ -21,4 +21,34 @@ class ControllerPost extends F\ControllerBase
 
         $this->gotoLocation("email-test");
     }
+
+    protected function processRecord()
+    {
+        $table = new ModelDatabaseTableTest();
+        switch ($_POST["action"])
+        {
+            case "add":
+                $table->addRecord($_POST["record"]);
+                break;
+
+            case "save":
+                $id = $_POST["record"]["id"];
+                unset($_POST["record"]["id"]);
+                $table->updateRecord($_POST["record"], "id = {$id}");
+                break;
+
+            case "delete":
+                $id = $_POST["record"]["id"];
+                unset($_POST["record"]["id"]);
+                $table->deleteRecord("id = {$id}");
+                break;
+
+            default:
+                echo "Invalid action: '{$_POST["action"]}'";
+                F\debug($_POST);
+                exit();
+                break;
+        }
+        $this->gotoLocation("database");
+    }
 }
