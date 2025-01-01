@@ -51,4 +51,9 @@ class ControllerPost extends F\ControllerBase
         }
         $this->gotoLocation("database");
     }
+
+    protected function processJsPost()
+    {
+        return json_encode(F\getPostedData(), JSON_PRETTY_PRINT);
+    }
 }

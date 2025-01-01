@@ -33,6 +33,15 @@ class ControllerPages extends ControllerApplication
         return $view->generateOutput();
     }
 
+    protected function showPost($parameters)
+    {
+        $view = $this->createView("viewPost");
+        $view->pageData = [
+            "posted_data" => F\getPostedData()
+        ];
+        return $view->generateOutput();
+    }
+
     protected function showLogFile($parameters)
     {
         $filename = F\arrayGet($parameters, "filename");

@@ -3,28 +3,32 @@
 define("PAGE_TITLE", "PHP framework demo");
 
 define("ROUTES", [
-    ["DEFAULT",                                        "ControllerPages", "showHome"      ],
+    ["DEFAULT",                                         "ControllerPages",  "showHome"      ],
 
     // Route with parameters, can have different formats, we must define each format
     // Show the parameters demo page
-    ["parameters",                                     "ControllerPages", "showParameters"],
+    ["parameters",                                      "ControllerPages",  "showParameters"],
     // Only parameter 1
-    ["parameters/param-1/{param_1}",                   "ControllerPages", "showParameters"],
+    ["parameters/param-1/{param_1}",                    "ControllerPages",  "showParameters"],
     // Only parameter 2
-    ["parameters/param-2/{param_2}",                   "ControllerPages", "showParameters"],
+    ["parameters/param-2/{param_2}",                    "ControllerPages",  "showParameters"],
     // Both parameters
-    ["parameters/param-1/{param_1}/param-2/{param_2}", "ControllerPages", "showParameters"],
+    ["parameters/param-1/{param_1}/param-2/{param_2}",  "ControllerPages",  "showParameters"],
 
     // Email test
-    ["email-test",                                     "ControllerPages", "showEmailTest" ],
-    ["send-email",                                     "ControllerPost",  "sendEmail"     ],
+    ["email-test",                                      "ControllerPages",  "showEmailTest" ],
+    ["send-email",                                      "ControllerPost",   "sendEmail"     ],
 
     // Database
-    ["database",                                       "ControllerPages", "showDatabase"  ],
-    ["database/process-record",                        "ControllerPost",  "processRecord" ],
+    ["database",                                        "ControllerPages",  "showDatabase"  ],
+    ["database/process-record",                         "ControllerPost",   "processRecord" ],
+
+    // Post data
+    ["post",                                            "ControllerPages",  "showPost"      ],
+    ["post-js",                                         "ControllerPost",   "processJsPost" ],
 
     // Show log files
-    ["show-log/{filename}",                            "ControllerPages", "showLogFile"   ]
+    ["show-log/{filename}",                             "ControllerPages",  "showLogFile"   ]
 ]);
 
 define("SEARCH_PATHS", [
